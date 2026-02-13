@@ -3,20 +3,10 @@ version: '1.0.0'
 config-version: 2
 
 profile: 'flipkart_order_details'
-model-path: ['models']
-analysis-path: ["analysis"]
-test-path: ["tests"]
-macro: ["macros"]
-seed-path: ["seeds"]
-
-target-path: "targets"
-clean-target:
-  -"targets"
-  -"dbt_packages"
 
 models:
   project_flipkart:
-  staging:
-  +materialized: view
+    staging:
+      +materialized: view
 
   
