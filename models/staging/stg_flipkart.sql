@@ -22,7 +22,7 @@ with cleaned as(
   trim ("RETURN_POLICY_DAYS"),	
   trim ("IS_RETURNABLE"),
   trim ("PAYMENT_MODES"),
-  trim ("SIPPING_WEIGHT_G"),
+  trim ("SHIPPING_WEIGHT_G"),
   trim ("PRODUCT_SCORE"),
   trim ("SELLER_RATING") 
 
