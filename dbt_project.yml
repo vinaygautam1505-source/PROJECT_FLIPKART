@@ -5,8 +5,7 @@ config-version: 2
 profile: 'flipkart_order_details'
 
 models:
-  project_flipkart:
-    staging:
-      +materialized: incremental
+  staging:
+    +materialized: incremental
 
   
