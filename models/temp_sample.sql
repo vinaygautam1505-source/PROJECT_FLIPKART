@@ -6,5 +6,5 @@
 SELECT *
 FROM {{ source('flipkart_order_details', 'FLIPKARD') }}
 {% if is_incremental() %}
-WHERE listing_at > (SELECT MAX(listing_at) FROM {{ this }})
+WHERE listing_date > (SELECT MAX(listing_date) FROM {{ this }})
 {% endif %}
