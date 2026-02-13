@@ -1,0 +1,142 @@
+version: 2
+
+models:
+  - name: stg_flipkard
+    description: "clead staging view"
+
+    columns:
+      - name: product_id
+        description: "product unique code"
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: "iteam name"
+        tests:
+          - not_null
+
+      - name: category
+        description: "iteam type"
+        tests:
+          - not_null
+
+      - name: brand
+        description: "iteam brand name"
+        tests:
+          - not_null
+
+      - name: seller
+        description: "seller name"
+        tests:
+          - not_null
+
+      - name: seller_city
+        description: "seller city"
+        tests:
+          - not_null
+
+      - name: price
+        description: "product price"
+        tests:
+          - not_null
+
+      - name: discount_percent
+        description: "discounts"
+        tests:
+          - not_null
+
+      - name: final_price
+        description: "final_price"
+        tests:
+          - not_null
+
+      - name: rating
+        description: "product rating"
+        tests:
+          - not_null
+
+      - name: review_count
+        description: "rating rating"
+        tests:
+          - not_null
+
+      - name: stock_available
+        description: "availabe stock quantity"
+        tests:
+          - not_null
+
+      - name: units_sold
+        description: "product sold quantity"
+        tests:
+          - not_null
+
+      - name: listing_date
+        description: "product listing date"
+        tests:
+          - not_null
+
+      - name: delivery_days
+        description: "delivery tat"
+        tests:
+          - not_null
+
+      - name: weight_g
+        description: "product weight"
+        tests:
+          - not_null
+
+      - name: warranty_months
+        description: "total warranty months"
+        tests:
+          - not_null
+
+      - name: color
+        description: "color"
+        tests:
+          - not_null
+
+      - name: size
+        description: "size"
+        tests:
+          - not_null
+
+      - name: return_policy_days
+        description: "return policy days"
+        tests:
+          - not_null
+
+      - name: is_returnable
+        description: "return or not"
+        tests:
+          - not_null
+
+      - name: payment_modes
+        description: "payment type"
+        tests:
+          - not_null
+
+      - name: shipping_weight_g
+        description: "weight at the time of shipping"
+        tests:
+          - not_null
+
+      - name: product_score
+        description: "product score"
+        tests:
+          - not_null
+
+      - name: seller_rating
+        description: "seller total ratings"
+        tests:
+          - not_null
+
+
+
+
+
+
+
+
+           
+   			
