@@ -1,8 +1,8 @@
-with cleaned and renamed as(
+with cleaned_and_renamed as(
   select
-  trim ("product_id") as 	product_id,
+  trim ("product_id") as product_id,
   trim ("product_name") as product_name,
-  trim ("category") as 	category",
+  trim ("category") as 	category,
   trim ("brand") as brand,
   trim ("seller") as seller,		
   trim ("seller_city") as seller_city,	
@@ -28,4 +28,4 @@ with cleaned and renamed as(
 
   from {{ source('flipkart_order_details', 'FLIPKARD') }}
   )
-  SELECT * FROM cleaned and renamed 
+  SELECT * FROM cleaned _and_renamed 
