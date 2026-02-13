@@ -28,4 +28,4 @@ with cleaned_and_renamed as(
 
   from {{ source('flipkart_order_details', 'FLIPKARD') }}
   )
-  SELECT * FROM cleaned _and_renamed 
+  SELECT * FROM cleaned_and_renamed 
