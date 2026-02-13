@@ -1,7 +1,8 @@
 version: 2
 
-source:
-  -name: flipkart_order_details
-  database: FLIPKART
-  schema: INPUT_AIRBYTE
-  tables: FLIPKARD
+sources:
+  - name: flipkart_order_details
+    database: FLIPKART
+    schema: INPUT_AIRBYTE
+    tables: 
+      - name: FLIPKARD
