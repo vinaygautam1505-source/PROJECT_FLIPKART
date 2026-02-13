@@ -1,31 +1,31 @@
-with cleaned_and_renamed as(
+with cleaned as(
   select
-  trim ("product_id") as product_id,
-  trim ("product_name") as product_name,
-  trim ("category") as 	category,
-  trim ("brand") as brand,
-  trim ("seller") as seller,		
-  trim ("seller_city") as seller_city,	
-  trim ("price") as price,
-  trim ("discount_percent") as discount_percent,		
-  trim ("final_price") as final_price,	
-  trim ("rating") as rating,
-  trim ("review_count") as review_count,
-  trim ("stock_available") as stock_available,
-  trim ("units_sold") as units_sold,
-  trim ("listing_date")	as listing_date,	
-  trim ("delivery_days") as delivery_days,
-  trim ("weight_g") as weight_g,	
-  trim ("warranty_months") as warranty_months,
-  trim ("color") as color,	
-  trim ("size")	as size,
-  trim ("return_policy_days") as return_policy_days,	
-  trim ("is_returnable") as is_returnable,
-  trim ("payment_modes") as payment_modes,
-  trim ("shipping_weight_g") as shipping_weight_g,
-  trim ("product_score") as product_score,
-  trim ("seller_rating") as seller_rating
+  trim ("PRODUCT_ID"),
+  trim ("PRODUCT_NAME"),
+  trim ("CATEGORY"),
+  trim ("BRAND"),
+  trim ("SELLER"),		
+  trim ("SELLER_CITY"),	
+  trim ("PRICE"),
+  trim ("DISCOUNT_PERCENT"),		
+  trim ("FINAL_PRICE"),	
+  trim ("RATING"),
+  trim ("REVIEW_COUNT"),
+  trim ("STOCK_AVAILABLE"),
+  trim ("UNITS_SOLD"),
+  trim ("LISTING_DATE"),	
+  trim ("DELIVERY_DAYS"),
+  trim ("WEIGHT_G"),	
+  trim ("WARRANTY_MONTHS"),
+  trim ("COLOR"),	
+  trim ("SIZE"),
+  trim ("RETURN_POLICY_DAYS"),	
+  trim ("IS_RETURNABLE"),
+  trim ("PAYMENT_MODES"),
+  trim ("SIPPING_WEIGHT_G"),
+  trim ("PRODUCT_SCORE"),
+  trim ("SELLER_RATING") 
 
   from {{ source('flipkart_order_details', 'FLIPKARD') }}
   )
-  SELECT * FROM cleaned_and_renamed 
+  SELECT * FROM cleaned
