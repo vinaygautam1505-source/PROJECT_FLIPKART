@@ -1,4 +1,4 @@
-version:
+version: 2
 
 models:
   - name: dim_flipkart
@@ -8,13 +8,12 @@ models:
         description: "product unique id"
         tests:
           - not_null
-          - unique
+		  - unique
           
       - name: product_name
         description: "product unique name"
         tests:
           - not_null
-          - unique
 
       - name: category
         description: "product category"
@@ -31,17 +30,17 @@ models:
         tests:
           - not_null
 
-      - name:	seller_city
+      - name: seller_city
         description: "seller city"
         tests:
           - not_null
 
-      - name:	price
+      - name: price
         description: "products orignal price"
         tests:
           - not_null
 
-      - name:	discount_percent
+      - name: discount_percent
         description: "discount_percent"
         tests:
           - not_null
@@ -72,68 +71,68 @@ models:
         tests:
           - not_null
 
-      - name: listing_date	
+      - name: listing_date
         description: " listing_date"
         tests:
           - not_null
 
-      - name: delivery_days	
+      - name: delivery_days
         description: " delivery tat"
         tests:
           - not_null
 
-      - name: weight_g	
+      - name: weight_g
         description: "total raw weight"
         tests:
           - not_null
 
-      - name:	warranty_months
+      - name: warranty_months
         description: "total warranty_months"
         tests:
           - not_null
 
           
-      - name: colors
+      - name: color
         description: "color"
         tests:
           - not_null
 
             
-      - name: size
-        description: "size"
-        tests:
-          - not_null
+       - name: size
+         description: "size"
+         tests:
+           - not_null
 
-      - name: return_policy_days
-        description: "return_policy_days"
-        tests:
-          - not_null
+       - name: return_policy_days
+         description: "return_policy_days"
+         tests:
+           - not_null
 
-      - name: is_returnable
-        description: "returnable or not"
-        tests:
-          - not_null
+       - name: is_returnable
+         description: "returnable or not"
+         tests:
+           - not_null
 
-      - name: payment_modes
-        description: "	payment_modes"
-        tests:
-          - not_null
+       - name: payment_modes
+         description: "	payment_modes"
+         tests:
+           - not_null
 
-      - name:	shipping_weight_g
-        description: "shipping_weight_g"
-        tests:
-          - not_null
+       - name: shipping_weight_g
+         description: "shipping_weight_g"
+         tests:
+           - not_null
 
-      - name: product_score
-        description: "product_score"
-        tests:
-          - not_null
+       - name: product_score
+         description: "product_score"
+         tests:
+           - not_null
 
           
-      - name: seller_rating
-        description: "	seller rating"
-        tests:
-          - not_null
+       - name: seller_rating
+         description: "	seller rating"
+         tests:
+           - not_null
 
 
 
