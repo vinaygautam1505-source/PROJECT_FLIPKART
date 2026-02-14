@@ -6,133 +6,133 @@ models:
     columns:
       - name: product_id
         description: "product unique id"
-        test:
+        tests:
           - not_null
           - unique
           
       - name: product_name
         description: "product unique name"
-        test:
+        tests:
           - not_null
           - unique
 
       - name: category
         description: "product category"
-        test:
+        tests:
           - not_null
 
       - name: brand
         description: "produc tbrand"
-        test:
+        tests:
           - not_null
 
       - name: seller
         description: "seller name"
-        test:
+        tests:
           - not_null
 
       - name:	seller_city
         description: "seller city"
-        test:
+        tests:
           - not_null
 
       - name:	price
         description: "products orignal price"
-        test:
+        tests:
           - not_null
 
       - name:	discount_percent
         description: "discount_percent"
-        test:
+        tests:
           - not_null
 
       - name: final_price
         description: "after discount final price"
-        test:
+        tests:
           - not_null
 
       - name: rating
         description: "rating"
-        test:
+        tests:
           - not_null
 
       - name: review_count
         description: "review_count"
-        test:
+        tests:
           - not_null
 
 
       - name: stock_available
         description: "available stock"
-        test:
+        tests:
           - not_null
 
       - name: units_sold
         description: "total sold units"
-        test:
+        tests:
           - not_null
 
       - name: listing_date	
         description: " listing_date"
-        test:
+        tests:
           - not_null
 
       - name: delivery_days	
         description: " delivery tat"
-        test:
+        tests:
           - not_null
 
       - name: weight_g	
         description: "total raw weight"
-        test:
+        tests:
           - not_null
 
       - name:	warranty_months
         description: "total warranty_months"
-        test:
+        tests:
           - not_null
 
           
       - name: colors
         description: "color"
-        test:
+        tests:
           - not_null
 
             
       - name: size
         description: "size"
-        test:
+        tests:
           - not_null
 
       - name: return_policy_days
         description: "return_policy_days"
-        test:
+        tests:
           - not_null
 
       - name: is_returnable
         description: "returnable or not"
-        test:
+        tests:
           - not_null
 
       - name: payment_modes
         description: "	payment_modes"
-        test:
+        tests:
           - not_null
 
       - name:	shipping_weight_g
         description: "shipping_weight_g"
-        test:
+        tests:
           - not_null
 
       - name: product_score
         description: "product_score"
-        test:
+        tests:
           - not_null
 
           
       - name: seller_rating
         description: "	seller rating"
-        test:
+        tests:
           - not_null
 
 
