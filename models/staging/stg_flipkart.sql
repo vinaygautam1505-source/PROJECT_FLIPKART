@@ -5,7 +5,7 @@ with cleaned as(
   CATEGORY,
   BRAND,
   SELLER,		
-  ELLER_CITY,	
+  SELLER_CITY,	
   PRICE,
   DISCOUNT_PERCENT,		
  FINAL_PRICE,	
