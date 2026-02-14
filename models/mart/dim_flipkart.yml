@@ -1,0 +1,150 @@
+version:
+
+models:
+  - name: dim_flipkart
+    description: "dimension table for flipkart"
+    columns:
+      - name: product_id
+        decription: "product unique id"
+        test:
+          - not_null
+          - unique
+          
+      - name: product_name
+        decription: "product unique name"
+        test:
+          - not_null
+          - unique
+
+      - name: category
+        decription: "product category"
+        test:
+          - not_null
+
+      - name: brand
+        decription: "produc tbrand"
+        test:
+          - not_null
+
+      - name: seller
+        decription: "seller name"
+        test:
+          - not_null
+
+      - name:	seller_city
+        decription: "seller city"
+        test:
+          - not_null
+
+      - name:	price
+        decription: "products orignal price"
+        test:
+          - not_null
+
+      - name:	discount_percent
+        decription: "discount_percent"
+        test:
+          - not_null
+
+      - name: final_price
+        decription: "after discount final price"
+        test:
+          - not_null
+
+      - name: rating
+        decription: "rating"
+        test:
+          - not_null
+
+      - name: review_count
+        decription: "review_count"
+        test:
+          - not_null
+
+
+      - name: stock_available
+        decription: "available stock"
+        test:
+          - not_null
+
+      - name: units_sold
+        decription: "total sold units"
+        test:
+          - not_null
+
+      - name: listing_date	
+        decription: " listing_date"
+        test:
+          - not_null
+
+      - name: delivery_days	
+        decription: " delivery tat"
+        test:
+          - not_null
+
+      - name: weight_g	
+        decription: "total raw weight"
+        test:
+          - not_null
+
+      - name:	warranty_months
+        decription: "total warranty_months"
+        test:
+          - not_null
+
+          
+      - name: colors
+        decription: "color"
+        test:
+          - not_null
+
+            
+      - name: size
+        decription: "size"
+        test:
+          - not_null
+
+      - name: return_policy_days
+        decription: "return_policy_days"
+        test:
+          - not_null
+
+      - name: is_returnable
+        decription: "returnable or not"
+        test:
+          - not_null
+
+      - name: payment_modes
+        decription: "	payment_modes"
+        test:
+          - not_null
+
+      - name:	shipping_weight_g
+        decription: "shipping_weight_g"
+        test:
+          - not_null
+
+      - name: product_score
+        decription: "product_score"
+        test:
+          - not_null
+
+          
+      - name: seller_rating
+        decription: "	seller rating"
+        test:
+          - not_null
+
+
+
+
+
+
+
+      
+  
+		
+		
+		
+ 
+
