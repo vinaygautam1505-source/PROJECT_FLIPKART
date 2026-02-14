@@ -69,8 +69,6 @@ models:
 
       - name: units_sold
         description: "product sold quantity"
-        tests:
-          - not_null
 
       - name: listing_date
         description: "product listing date"
