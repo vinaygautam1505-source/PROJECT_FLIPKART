@@ -1,4 +1,4 @@
-with cleaned as(
+with cleaned_and_renamed as(
   select
   PRODUCT_ID,
   PRODUCT_NAME,
@@ -28,4 +28,4 @@ with cleaned as(
 
   from {{ source('flipkart_order_details', 'FLIPKARD') }}
   )
-  SELECT * FROM cleaned
+  SELECT * FROM cleaned_and_renamed
